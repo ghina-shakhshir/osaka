@@ -1,0 +1,434 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding-top: 80px; }
+
+
+.navbar {
+  background: #7a7a7a;          
+  border-bottom: 1px solid #666;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #f5f5f5 !important;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 18px 16px;
+}
+
+.navbar-nav .nav-link.active {
+  background: #5f5f5f;
+}
+
+.navbar-nav .nav-link:hover {
+  background: #666666;
+}
+
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 180px;
+  background: #ffffff;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  font-size: 0.9rem;
+}
+
+.nav-item.dropdown:hover .dropdown-menu,
+.nav-item.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+.nav-link.dropdown-toggle::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+
+.navbar-collapse {
+  display: flex !important;
+  justify-content: flex-end;
+}
+
+
+.navbar-toggler {
+  border: none;
+  color: #fff;
+}
+
+
+.placeholder-img-lg {
+  width: 100%;
+  height: 320px;
+  background: #bfbfbf  url("./assets/img/photo.png") center/cover no-repeat;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 180px;
+  background: #bfbfbf url("./assets/img/photo.png") center/cover no-repeat;
+}
+
+
+.hero-section {
+  background: #a7a7a7;
+  color: #ffffff;
+  padding: 70px 0 40px;
+}
+
+.hero-tag {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  background: #5f5f5f;
+  border-radius: 0;
+  border: none;
+  padding: 10px 28px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.home-services-strip {
+  margin-top: -40px;  }
+
+.service-card {
+  background: #151515;
+  color: #ffffff;
+  padding: 25px 25px 20px;
+  font-size: 0.85rem;
+}
+
+.service-card.middle {
+  background: #353535;
+}
+
+.service-card h5 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.service-card p {
+  margin-bottom: 18px;
+}
+
+.service-card .service-arrow {
+  font-size: 1.1rem;
+}
+
+
+.site-footer {
+  background: #111;
+  color: #eee;
+  font-size: 0.8rem;
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+
+.section-wrap {
+  padding: 60px 0;
+  background: #f0f0f0;
+}
+
+.section-white {
+  background: #ffffff;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+
+.section-title {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.text-grey {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.about-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.about-bullets li {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.about-bullets li::before {
+  content: "✔";
+  margin-right: 6px;
+  font-size: 0.7rem;
+}
+
+
+.stats-box {
+  margin-top: 25px;
+}
+
+.stat-item h3 {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.stat-item span {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+
+.procedure-card {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 25px;
+  height: 100%;
+}
+
+.procedure-card h5 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.procedure-card p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
+.partner-btn {
+  background: #555;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 10px 26px;
+}
+
+
+.stack-img {
+  width: 100%;
+  height: 140px;
+  background: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.check-list li {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.check-list li::before {
+  content: "✔";
+  margin-right: 6px;
+  font-size: 0.7rem;
+}
+
+
+.testimonial-box {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 25px;
+  font-size: 0.9rem;
+}
+
+.testimonial-stars {
+  color: #ffbf00;
+  margin-bottom: 10px;
+}
+
+
+.logo-strip {
+  padding: 25px 0;
+  background: #f8f8f8;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+
+.big-cta {
+  background: #595959;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.big-cta h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.big-cta .btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+
+.main-footer {
+  background: #111111;
+  color: #f0f0f0;
+  padding-top: 40px;
+  font-size: 0.8rem;
+}
+
+.main-footer h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  display: block;
+  color: #cccccc;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 25px;
+  padding-top: 10px;
+  font-size: 0.75rem;
+  color: #777;
+}
+.procedure-card {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 25px 25px 20px;
+  height: 100%;
+  transition: 0.2s;
+}
+
+.procedure-card h5 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.procedure-card p {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.procedure-card:hover {
+  border-color: #999;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.procedure-card h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.procedure-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+.logo-strip img{
+    width:199px;
+    height:112px;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stack-img {
+    width: 100%;
+    margin-bottom: -40px;
+  }
+}
+@media (max-width: 990px) {
+
+
+    .navbar-nav {
+        display: none !important;
+    }
+
+  
+    .navbar {
+        padding: 12px 0;
+    }
+
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+}
+
