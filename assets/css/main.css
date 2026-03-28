@@ -85,17 +85,17 @@ body {
 
 .placeholder-img-lg {
   width: 100%;
-  height: 320px;
-  background: #bfbfbf  url("./assets/img/photo.png") center/cover no-repeat;
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
 }
 
-.placeholder-img {
+.placeholder-img-lg img {
   width: 100%;
-  height: 180px;
-  background: #bfbfbf url("./assets/img/photo.png") center/cover no-repeat;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-
-
 .hero-section {
   background: #a7a7a7;
   color: #ffffff;
@@ -120,7 +120,7 @@ body {
   background: #5f5f5f;
   border-radius: 0;
   border: none;
-  padding: 10px 28px;
+  padding: 10px 28px 40px;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -179,12 +179,51 @@ body {
   letter-spacing: 2px;
   color: #999;
 }
-
+.box {
+  
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+  transform: translateY(-8px);
+  background-color: #e0e0e0;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
 
 .section-title {
   font-weight: 800;
   text-transform: uppercase;
 }
+
+.stack-img {
+  width: 100%;
+  height: 260px;     
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.stack-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .image-stack {
+    height: auto;
+  }
+
+  .stack-img {
+    position: relative;
+    width: 100% !important;
+    height: 220px !important;
+    margin-bottom: 20px;
+  }
+}
+
 
 .text-grey {
   color: #666;
@@ -301,14 +340,16 @@ body {
   background: #f8f8f8;
   text-align: center;
   font-size: 0.85rem;
-  color: #777;
+  color: #777 ;
+  margin: 90px 90px -100px;
 }
 
 
 .big-cta {
   background: #595959;
   color: #ffffff;
-  padding: 40px 0;
+  padding: 140px 0 ;
+  margin: 0px 50px -100px;
 }
 
 .big-cta h2 {
@@ -326,8 +367,9 @@ body {
 .main-footer {
   background: #111111;
   color: #f0f0f0;
-  padding-top: 40px;
+  padding-top: 140px;
   font-size: 0.8rem;
+
 }
 
 .main-footer h6 {
@@ -396,6 +438,354 @@ body {
     width:199px;
     height:112px;
 }
+
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform .4s ease, box-shadow .4s ease;;
+}
+
+.team-img {
+  height: 420px; 
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease;
+}
+
+
+.team-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 25px 20px;
+    transition: transform .4s ease, background .4s ease;
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,.2);
+}
+
+.team-card:hover .team-img img {
+  transform: scale(1.08);
+}
+
+.team-card:hover .team-info {
+  transform: translateY(-10px);
+}
+
+.team-info .role {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.team-info h5 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+.team-card.dark .team-info {
+  background: #1f2427;
+}
+
+.team-card.dark h5,
+.team-card.dark .role,
+.team-card.dark .socials {
+  color: white;
+}
+
+
+.big-quote {
+  font-size: clamp(2rem, 4vw, 5.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.section-wrap .col-lg-4 > div {
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-wrap .col-lg-4 div > div:last-child {
+  transition: transform 0.4s ease;
+}
+
+.section-wrap .col-lg-4 > div:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.section-wrap .col-lg-4 > div:hover div:last-child {
+  transform: translateX(10px);
+}
+
+.section-wrap .bg-white:hover {
+  background: #1f2427 !important;
+  color: white;
+}
+
+.section-wrap .bg-white:hover p,
+.section-wrap .bg-white:hover h5 {
+  color: white !important;
+}
+
+.procedure-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 40px 30px;
+  height: 100%;
+  transition: all .4s ease;
+}
+
+.proc-icon {
+  font-size: 32px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.procedure-card h5 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.procedure-card p {
+  color: #777;
+  font-size: .9rem;
+}
+
+.procedure-card:hover {
+  background: #777;
+  color: white;
+  transform: translateY(-10px);
+}
+
+.procedure-card:hover p,
+.procedure-card:hover .proc-icon {
+  color: white;
+}
+
+.procedure-card.active {
+  background: #777;
+  color: white;
+  border: none;
+}
+
+.procedure-card.active p,
+.procedure-card.active .proc-icon {
+  color: white;
+}
+
+
+
+
+.card{
+  width:300px;
+  background:#d6d6d6;
+
+  
+  margin-bottom: 100px;
+}
+
+.white-box{
+  background:#fff;
+  margin: 180px 24px 0;   
+  padding: 24px 22px 28px;
+  margin-bottom: -100px;
+}
+
+.title{
+  margin:0 0 16px;
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+}
+
+.list{
+  list-style:none;
+  padding:0;
+  margin:0 0 22px;
+  display:grid;
+  gap:12px;
+}
+
+.item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:13px;
+  color:#222;
+}
+
+.check{
+  width:16px;
+  height:16px;
+}
+
+.btn{
+  width:150px;
+  height:36px;
+  background:#6f6f6f;
+  color:#fff;
+  border:0;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+.work-img img,
+.row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-section {
+  background: transparent; 
+  padding: 40px 0;
+}
+
+.accordion-item {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #e5e5e5; 
+}
+
+
+.accordion-button {
+  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+  padding: 20px 0;
+  box-shadow: none;
+display:flex;
+
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  direction: ltr;
+}
+
+.accordion-button:not(.collapsed) {
+  background: transparent;
+  color: #000;
+}
+
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+.accordion-button::after {
+
+    content: "›";
+  font-size: 22px;
+  margin-left: 10px;
+  transition: 0.3s;
+
+  background-image: none !important;
+}
+
+
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg);
+}
+
+
+.accordion-body {
+  padding: 10px 0 20px;
+  color: #666;
+}
+
+
+
+
+.first-question img {
+  width: 100%;       
+  max-width: 900px;   
+  height: 300px;       
+  display: block;
+}
+
+
+
+
+.CLEANING img{
+  max-height: 238px;
+  min-height: 238px;
+}
+
+
+
+
+.single-post img{
+  max-height: 250px;
+}
+.error{
+  padding: 250px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
